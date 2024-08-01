@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bangalore House Price Predictor</title>
+    <link rel="stylesheet" href="app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+
+    <div class="heading"><h2>Bangalore House Price Detection</h2></div>
+
+    <div class="form">
+        <form >
+            <h2>Area in Sq Feet</h2>
+            <input type="number" name="total_sqft" id="uiSqft" class="floatLabel" required>
+
+            <h2>Enter BHK</h2>
+            <select name="bkk" id="uibhk">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <h2>Enter Balcony</h2>
+            <select name="balcony" id="uibalcony">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+
+            <h2>Bath</h2>
+            <select name="bath" id="uibath">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">6</option>
+                <option value="6">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+            </select>
+
+            <h2>Locations</h2>
+            <select name="locations" id="uilocations">
+                <option value="A">A</option>
+                <option value="B">B</options>
+            </select><br>
+
+            <button type="submit" class="submitButton"><h3>Estimate The Price</h3></button>
+
+            <div class="result"></div>
+
+        </form>
+    </div>
+</body>
+</html>
